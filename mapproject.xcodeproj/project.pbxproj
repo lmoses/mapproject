@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A60DF0281623B1350027171F /* jquery.tmpl.js in Sources */ = {isa = PBXBuildFile; fileRef = A60DF0271623B1350027171F /* jquery.tmpl.js */; };
 		A6CB2DF4161EA3C20071F8AA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6CB2DF3161EA3C20071F8AA /* Foundation.framework */; };
 		A6CB2DF6161EA3C20071F8AA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6CB2DF5161EA3C20071F8AA /* UIKit.framework */; };
 		A6CB2DF8161EA3C20071F8AA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6CB2DF7161EA3C20071F8AA /* CoreGraphics.framework */; };
@@ -37,9 +38,13 @@
 		A6CB2E3C161EA3C20071F8AA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A6CB2E3B161EA3C20071F8AA /* AppDelegate.m */; };
 		A6CB2E3F161EA3C20071F8AA /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A6CB2E3E161EA3C20071F8AA /* MainViewController.m */; };
 		A6CB2E41161EA3C20071F8AA /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A6CB2E40161EA3C20071F8AA /* MainViewController.xib */; };
+		A6CB2E4B161EA4AE0071F8AA /* www in Resources */ = {isa = PBXBuildFile; fileRef = A6CB2E4A161EA4AD0071F8AA /* www */; };
+		A6CB2E4D161EA6A20071F8AA /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A6CB2E4C161EA6A20071F8AA /* Default-568h@2x.png */; };
+		A6CB2E5F161FE80F0071F8AA /* style.css in Resources */ = {isa = PBXBuildFile; fileRef = A6CB2E5E161FE80F0071F8AA /* style.css */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A60DF0271623B1350027171F /* jquery.tmpl.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = jquery.tmpl.js; path = www/js/jquery.tmpl.js; sourceTree = "<group>"; };
 		A6CB2DEF161EA3C20071F8AA /* mapproject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mapproject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6CB2DF3161EA3C20071F8AA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		A6CB2DF5161EA3C20071F8AA /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -77,6 +82,9 @@
 		A6CB2E40161EA3C20071F8AA /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = MainViewController.xib; path = Classes/MainViewController.xib; sourceTree = "<group>"; };
 		A6CB2E43161EA3C20071F8AA /* README */ = {isa = PBXFileReference; lastKnownFileType = text; name = README; path = Plugins/README; sourceTree = "<group>"; };
 		A6CB2E44161EA3C20071F8AA /* verify.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = verify.sh; sourceTree = "<group>"; };
+		A6CB2E4A161EA4AD0071F8AA /* www */ = {isa = PBXFileReference; lastKnownFileType = folder; path = www; sourceTree = "<group>"; };
+		A6CB2E4C161EA6A20071F8AA /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		A6CB2E5E161FE80F0071F8AA /* style.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; name = style.css; path = www/css/style.css; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +122,10 @@
 		A6CB2DE1161EA3C20071F8AA = {
 			isa = PBXGroup;
 			children = (
+				A60DF0271623B1350027171F /* jquery.tmpl.js */,
+				A6CB2E5E161FE80F0071F8AA /* style.css */,
+				A6CB2E4C161EA6A20071F8AA /* Default-568h@2x.png */,
+				A6CB2E4A161EA4AD0071F8AA /* www */,
 				A6CB2E0D161EA3C20071F8AA /* mapproject */,
 				A6CB2DF2161EA3C20071F8AA /* Frameworks */,
 				A6CB2DF0161EA3C20071F8AA /* Products */,
@@ -328,6 +340,9 @@
 				A6CB2E36161EA3C20071F8AA /* Capture.bundle in Resources */,
 				A6CB2E38161EA3C20071F8AA /* Cordova.plist in Resources */,
 				A6CB2E41161EA3C20071F8AA /* MainViewController.xib in Resources */,
+				A6CB2E4B161EA4AE0071F8AA /* www in Resources */,
+				A6CB2E4D161EA6A20071F8AA /* Default-568h@2x.png in Resources */,
+				A6CB2E5F161FE80F0071F8AA /* style.css in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -357,6 +372,7 @@
 				A6CB2E14161EA3C20071F8AA /* main.m in Sources */,
 				A6CB2E3C161EA3C20071F8AA /* AppDelegate.m in Sources */,
 				A6CB2E3F161EA3C20071F8AA /* MainViewController.m in Sources */,
+				A60DF0281623B1350027171F /* jquery.tmpl.js in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -439,8 +455,10 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 3.0;
-				SDKROOT = iphoneos;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos6.0;
+				VALID_ARCHS = "armv7 armv7s armv6 armv6s";
 			};
 			name = Debug;
 		};
@@ -463,9 +481,11 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 3.0;
-				SDKROOT = iphoneos;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos6.0;
 				VALIDATE_PRODUCT = YES;
+				VALID_ARCHS = "armv7 armv7s armv6 armv6s";
 			};
 			name = Release;
 		};
@@ -473,6 +493,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = YES;
+				ARCHS = (
+					armv6,
+					"$(ARCHS_STANDARD_32_BIT)",
+				);
 				COPY_PHASE_STRIP = NO;
 				FRAMEWORK_SEARCH_PATHS = /Users/Shared/Cordova/Frameworks;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -483,6 +507,7 @@
 					"CORDOVA_FRAMEWORK=1",
 				);
 				INFOPLIST_FILE = "mapproject/mapproject-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				OTHER_LDFLAGS = (
 					"-weak_framework",
 					UIKit,
@@ -494,6 +519,7 @@
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "armv6 armv7 armv7s";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -502,6 +528,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = YES;
+				ARCHS = (
+					armv6,
+					"$(ARCHS_STANDARD_32_BIT)",
+				);
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				FRAMEWORK_SEARCH_PATHS = /Users/Shared/Cordova/Frameworks;
@@ -512,6 +542,7 @@
 					"CORDOVA_FRAMEWORK=1",
 				);
 				INFOPLIST_FILE = "mapproject/mapproject-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				OTHER_LDFLAGS = (
 					"-weak_framework",
 					UIKit,
@@ -524,6 +555,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
+				VALID_ARCHS = "armv6 armv7 armv7s";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -547,6 +579,7 @@
 				A6CB2E49161EA3C20071F8AA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

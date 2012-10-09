@@ -91,22 +91,22 @@
         curDevOrientation = (UIDeviceOrientation)[[UIApplication sharedApplication] statusBarOrientation];
     }
     
-    if (UIDeviceOrientationIsValidInterfaceOrientation(curDevOrientation)) {
-        for (NSNumber *orient in self.viewController.supportedOrientations) {
-            if ([orient intValue] == curDevOrientation) {
-                forceStartupRotation = NO;
-                break;
-            }
-        }
-    } 
-    
-    if (forceStartupRotation) {
-        NSLog(@"supportedOrientations: %@", self.viewController.supportedOrientations);
-        // The first item in the supportedOrientations array is the start orientation (guaranteed to be at least Portrait)
-        UIInterfaceOrientation newOrient = [[self.viewController.supportedOrientations objectAtIndex:0] intValue];
-        NSLog(@"AppDelegate forcing status bar to: %d from: %d", newOrient, curDevOrientation);
-        [[UIApplication sharedApplication] setStatusBarOrientation:newOrient];
-    }
+//    if (UIDeviceOrientationIsValidInterfaceOrientation(curDevOrientation)) {
+//        for (NSNumber *orient in self.viewController.supportedOrientations) {
+//            if ([orient intValue] == curDevOrientation) {
+//                forceStartupRotation = NO;
+//                break;
+//            }
+//        }
+//    } 
+//    
+//    if (forceStartupRotation) {
+//        NSLog(@"supportedOrientations: %@", self.viewController.supportedOrientations);
+//        // The first item in the supportedOrientations array is the start orientation (guaranteed to be at least Portrait)
+//        UIInterfaceOrientation newOrient = [[self.viewController.supportedOrientations objectAtIndex:0] intValue];
+//        NSLog(@"AppDelegate forcing status bar to: %d from: %d", newOrient, curDevOrientation);
+//        [[UIApplication sharedApplication] setStatusBarOrientation:newOrient];
+//    }
     
     [self.window addSubview:self.viewController.view];
     [self.window makeKeyAndVisible];
